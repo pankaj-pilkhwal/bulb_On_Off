@@ -27,18 +27,18 @@
 </head>
 <body>
     <div>
-        <img id="bulb" src="bulb_off.gif" alt="bulboff"><br>
+        <img id="bulb" src="/bulb_On_Off/bulb_off.gif" alt="bulboff"><br>
         <button id="btn" onclick="turn()">Turn On</button>
 
     </div>
 
     <script>
         function turn() {
-            if ( bulb.src.match("bulb_off.gif")) {
-                document.getElementById("bulb").src = "bulb_on.gif"
+            if ( bulb.src.match("/bulb_On_Off/bulb_off.gif")) {
+                document.getElementById("bulb").src = "/bulb_On_Off/bulb_on.gif"
                 document.getElementById("btn").innerText = "Turn Off"
             } else {
-                document.getElementById("bulb").src = "bulb_off.gif"
+                document.getElementById("bulb").src = "/bulb_On_Off/bulb_off.gif"
                 document.getElementById("btn").innerText = "Turn On"
             }
             
