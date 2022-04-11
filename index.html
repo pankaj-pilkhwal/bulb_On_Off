@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb On-Off</title>
+    <style>
+        div{
+            padding-top: 30px;
+            position: relative;
+            display: inline-block;
+            left: 43%;
+        }
+        #bulb {
+            display: inline-block;
+            width: 200px;
+        }
+        #btn {
+            position: relative;
+            left: 28%;
+            font-size: larger;
+            display: inline-block;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img id="bulb" src="bulb_off.gif" alt="bulboff"><br>
+        <button id="btn" onclick="turn()">Turn On</button>
+
+    </div>
+
+    <script>
+        function turn() {
+            if ( bulb.src.match("bulb_off.gif")) {
+                document.getElementById("bulb").src = "bulb_on.gif"
+                document.getElementById("btn").innerText = "Turn Off"
+            } else {
+                document.getElementById("bulb").src = "bulb_off.gif"
+                document.getElementById("btn").innerText = "Turn On"
+            }
+            
+        }
+    </script>
+</body>
+</html>
